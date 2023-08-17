@@ -10,6 +10,30 @@
     font-size: 22px;
   }
 
+  .mainNav {
+    display: none;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav-open .mainNav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  
   .navBtn {
     font-size: 20px;
   }
@@ -70,11 +94,10 @@
 
 /* SMALL TABLET/LAPTOPS */
 @media (max-width: 991px) {
-    .mainNav {
-        display: none;
-    }
+  .mainNav {
+    display: none;
+  }
 }
-
 
 @media (max-width: 768px) {
   .mainNav {
@@ -93,26 +116,6 @@
     width: 40%;
     height: 100vh;
     transform: translateX(100%);
-  }
-
-  .btn-mobile-nav {
-    display: block;
-    z-index: 9999;
-  }
-
-  .nav-open .mainNav {
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    transform: translateX(0);
-  }
-
-  .nav-open .icon-mobile-nav[name="close-outline"] {
-    display: block;
-  }
-
-  .nav-open .icon-mobile-nav[name="menu-outline"] {
-    display: none;
   }
 
   .mainNavList {
