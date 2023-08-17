@@ -1,0 +1,369 @@
+/* FOR DESKTOPS */
+@media (max-width: 1280px) {
+  /* HEADER AND NAV */
+  .header {
+    padding: 34px 25px;
+    height: 101px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .navBtn {
+    font-size: 20px;
+  }
+
+  /* HERO SECTION */
+  .heroSection {
+    margin-top: 10rem;
+    background-image: url(/img/heroTablet.svg);
+  }
+
+  .heroText,
+  .heroSubTitle {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .heroTitle {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .herobtn .btn {
+    width: 237px;
+    height: 47px;
+    font-size: 20px;
+  }
+
+  /* ABOUT SCETION */
+  .aboutSection .gridCard {
+    width: 100%;
+  }
+  .aboutSection .gridItemText h3 {
+    font-size: 20px;
+    width: 278px;
+  }
+
+  .aboutSection .gridItemText p {
+    font-size: 16px;
+    width: 321px;
+  }
+
+  .aboutSection .gridItemText .learnBtn {
+    width: 200px;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+
+  .aboutSection .gridItem button {
+    width: 300px;
+    font-size: 24px;
+  }
+
+  .aboutImg {
+    width: 100%;
+  }
+}
+
+/* SMALL TABLET/LAPTOPS */
+@media (max-width: 991px) {
+    .mainNav {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+  .mainNav {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    position: absolute;
+    backdrop-filter: blur;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100vh;
+    transform: translateX(100%);
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav-open .mainNav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .mainNavList {
+    flex-direction: column;
+    /* gap: 3rem; */
+  }
+
+  .mainNaveLink:link,
+  .mainNaveLink:visited {
+    font-size: 3rem;
+  }
+
+  .heroSection {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .heroTitle {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .heroSubTitle,
+  .heroText {
+    font-size: 15px;
+  }
+
+  .navBtn .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroBtn {
+    width: 256px;
+    height: 65px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .aboutImg {
+    width: 60%;
+    margin-right: 10rem;
+  }
+
+  .aboutSection > .gridCard {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2px;
+  }
+  .aboutSection .gridItemText h3 {
+    font-size: 15px;
+    width: 268px;
+  }
+
+  .aboutSection .gridItemText p {
+    font-size: 15px;
+    width: 280px;
+    margin-bottom: 80px;
+  }
+
+  .aboutSection .gridItem button {
+    width: 224px;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    gap: 10px;
+    margin-right: 60px;
+  }
+
+  .twoCard {
+    width: 100%;
+    height: 50vh;
+  }
+  .aboutSection .gridItemText .learnBtn {
+    width: 145px;
+    height: 47px;
+    margin-left: 8rem;
+  }
+
+  .footerSection {
+    background-color: #1c1c1c;
+    border: 1px solid black;
+    color: #f6f6f6;
+    font-size: 25px;
+    width: 100vw;
+    margin-top: 100px;
+    font-weight: 400;
+    /* height: 100vh; */
+    background-position: left;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    padding: 50px 831px 50px 100px;
+  }
+
+  .footerSection .gridItem {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerSection h4 {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 30px;
+  }
+
+  .footerSection .footerLink {
+    width: 134px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "inter", sans-serif;
+  }
+}
+
+/*
+  MOBILE SCREEN of 480
+  */
+
+@media (max-width: 430px) {
+  .logo h2 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Syne", sans-serif;
+    gap: 5px;
+  }
+
+  .logo img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon-mobile-nav {
+    width: 20px;
+    height: 20px;
+  }
+  .navBtn {
+    display: none;
+  }
+  .heroSection {
+    background-image: url(img/Group\ 26809\ 1.png);
+    height: 70vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+  }
+  .aboutSection > .gridCard {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .heroText,
+  .heroSubTitle {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .heroTitle {
+    font-size: 20px;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-family: "Syne", sans-serif;
+  }
+
+  .heroBtn .btn {
+    font-size: 15px;
+    width: 173px;
+    font-weight: 600;
+    font-family: "Syne", sans-serif;
+    height: 47px;
+    padding: 10px;
+  }
+
+  .aboutSection > .gridCard {
+    width: 100%;
+    /* height: 600px; */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #fff;
+    gap: 15px;
+  }
+  .aboutImg,
+  .addWllet {
+    margin-right: 0px;
+  }
+  .aboutSection > .addWallet {
+    padding-top: 0px;
+  }
+  .aboutSection > .learnMoreBtn {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .gridItem .gridItemText h3 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Syne", sans-serif;
+  }
+
+  .aboutSection .gridItem p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .footerSection {
+    background-color: #1c1c1c;
+    border: 1px solid black;
+    color: #f6f6f6;
+    font-size: 20px;
+    width: 100vw;
+    margin-top: 51px;
+    font-weight: 400;
+    background-image: url(/img/footer.svg);
+    /* background-size: ; */
+    /* height: 100vh; */
+    background-position: left;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    padding: 50px 831px 50px 100px;
+  }
+
+  .footerSection .gridItem {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerSection h4 {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 30px;
+  }
+
+  .footerSection .footerLink {
+    width: 134px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "inter", sans-serif;
+  }
+}
