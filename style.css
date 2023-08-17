@@ -49,6 +49,12 @@
   text-decoration: underline;
 }
 
+.mobileDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* PERSONAL LIST */
 
 .PersonalList {

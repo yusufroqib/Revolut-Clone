@@ -8,12 +8,18 @@
 
   .logo {
     font-size: 22px;
+    
   }
 
   .mainNav {
     display: none;
   }
 
+  .navBtn {
+    font-size: 20px;
+    margin-right: 30px;
+  }
+  
   .btn-mobile-nav {
     display: block;
     z-index: 9999;
@@ -32,10 +38,6 @@
 
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
-  }
-  
-  .navBtn {
-    font-size: 20px;
   }
 
   /* HERO SECTION */
@@ -63,9 +65,15 @@
   }
 
   /* ABOUT SCETION */
-  .aboutSection .gridCard {
-    width: 100%;
+
+  .aboutSection .gridItem button {
+    width: 284px;
+    height: 47px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
   }
+  
   .aboutSection .gridItemText h3 {
     font-size: 20px;
     width: 278px;
@@ -80,11 +88,6 @@
     width: 200px;
     font-size: 15px;
     margin-left: 10px;
-  }
-
-  .aboutSection .gridItem button {
-    width: 300px;
-    font-size: 24px;
   }
 
   .aboutImg {
@@ -255,9 +258,11 @@
     width: 20px;
     height: 20px;
   }
+
   .navBtn {
     display: none;
   }
+
   .heroSection {
     background-image: url(img/Group\ 26809\ 1.png);
     height: 70vh;
