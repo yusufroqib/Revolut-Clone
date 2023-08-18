@@ -66,6 +66,23 @@
 
   /* ABOUT SCETION */
 
+  .aboutSection {
+    padding: 0 34px;
+    margin: 195px 0 74px;
+  }
+
+  .aboutSection .gridCard {
+    width: auto;
+  }
+
+  .aboutSection .gridCard .atm2 {
+  display: none;
+  }
+
+  .aboutSection .gridItem .atmTablet {
+    display: inline;
+  }
+
   .aboutSection .gridItem button {
     width: 284px;
     height: 47px;
@@ -75,30 +92,27 @@
   }
   
   .aboutSection .gridItemText h3 {
-    font-size: 20px;
     width: 278px;
+    font-size: 20px;
+    font-family: "Syne", sans-serif;
   }
 
   .aboutSection .gridItemText p {
     font-size: 16px;
     width: 321px;
+    font-weight: 400;
+    margin-bottom: 84px;
   }
 
-  .aboutSection .gridItemText .learnBtn {
-    width: 200px;
-    font-size: 15px;
-    margin-left: 10px;
-  }
-
-  .aboutImg {
+  .learnMore .gridItem img {
     width: 100%;
+    height: 100%;
+    margin-top: 70px;
   }
-}
 
-/* SMALL TABLET/LAPTOPS */
-@media (max-width: 991px) {
-  .mainNav {
-    display: none;
+  .aboutSection .gridItemText .learnMoreBtn {
+    width: 147px;
+    height: 47px;
   }
 }
 
@@ -157,10 +171,6 @@
     padding: 10px;
     margin: 0 auto;
   }
-  .aboutImg {
-    width: 60%;
-    margin-right: 10rem;
-  }
 
   .aboutSection > .gridCard {
     width: 100%;
@@ -188,10 +198,6 @@
     margin-right: 60px;
   }
 
-  .twoCard {
-    width: 100%;
-    height: 50vh;
-  }
   .aboutSection .gridItemText .learnBtn {
     width: 145px;
     height: 47px;
@@ -311,7 +317,7 @@
     background: #fff;
     gap: 15px;
   }
-  .aboutImg,
+  
   .addWllet {
     margin-right: 0px;
   }

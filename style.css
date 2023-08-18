@@ -219,10 +219,12 @@
 /* ABOUT SECTION */
 
 .aboutSection {
-  padding: 0 4.8rem;
-  margin-bottom: 141px;
+  padding: 0 171px;
+  margin: 167px 0 141px;
 }
+
 .aboutSection .gridCard {
+  width: 1385px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 178px;
@@ -241,6 +243,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.aboutSection .gridItem .atmTablet {
+  display: none;
 }
 
 .aboutSection .gridItemText {
@@ -284,6 +290,7 @@
 /* LEARN MORE CARD */
 
 .aboutSection .learnMore {
+  gap: 100px;
   padding: 21px 61px 41px 83px;
 }
 .aboutSection .gridItemText .learnMoreBtn {
