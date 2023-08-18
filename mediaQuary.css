@@ -25,6 +25,29 @@
     z-index: 9999;
   }
 
+  .mainNav {
+    background-color: rgba(100, 95, 95, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100vh;
+    transform: translateX(100%);
+  }
+
+  .mainNavList {
+    flex-direction: column;
+    /* gap: 3rem; */
+  }
+
   .nav-open .mainNav {
     opacity: 1;
     pointer-events: auto;
@@ -72,6 +95,7 @@
   }
 
   .aboutSection .gridCard {
+    grid-column-gap: 99px;
     width: auto;
   }
 
@@ -90,6 +114,11 @@
     font-size: 18px;
     font-weight: 600;
   }
+
+  .aboutImg {
+    width: 100%;
+    height: 100%;
+  }
   
   .aboutSection .gridItemText h3 {
     width: 278px;
@@ -104,11 +133,16 @@
     margin-bottom: 84px;
   }
 
-  .learnMore .gridItem img {
+  /* LEARN MORE BUTTON */
+  .aboutSection .learnMore {
+    grid-column-gap: 78px;
+  }
+
+  /* .learnMore .gridItem img {
     width: 100%;
     height: 100%;
     margin-top: 70px;
-  }
+  } */
 
   .aboutSection .gridItemText .learnMoreBtn {
     width: 147px;
@@ -116,29 +150,58 @@
   }
 }
 
-@media (max-width: 768px) {
-  .mainNav {
-    background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s ease-in;
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-    position: absolute;
-    backdrop-filter: blur;
-    top: 0;
-    left: 0;
-    width: 40%;
-    height: 100vh;
-    transform: translateX(100%);
+/* LARGE TABLETS/LAPTOP */
+
+@media (max-width: 991px) {
+  .heroSection {
+    margin-top: 2rem;
+  }
+  .aboutSection {
+    padding: 0 34px;
+    margin: 74px 0;
+  }
+  .aboutSection .gridCard {
+    grid-column-gap: 40px;
+  }
+  
+  .aboutSection .learnMore {
+    grid-column-gap: 28px;
   }
 
-  .mainNavList {
-    flex-direction: column;
-    /* gap: 3rem; */
+  .aboutSection .learnMore .gridItemText P {
+    width: 90%;
+    margin-bottom: 45px;
   }
+  
+.footerSection {
+ font-size: 26px;
+ padding: 80px 228px 57px 41px;
+}
+
+.footerSection .footerLink {
+  font-size: 16px;
+  width: 100px;
+}
+}
+
+/* SMALL TABLETS */
+
+@media (max-width: 768px) {
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .navBtn {
+    font-size: 16px;
+  }
+  .btn,
+.btnlink,
+.btn:visited {
+  width: 100px;
+  height: 47px;
+}
+
 
   .mainNaveLink:link,
   .mainNaveLink:visited {
@@ -172,10 +235,10 @@
     margin: 0 auto;
   }
 
-  .aboutSection > .gridCard {
+  .aboutSection  .gridCard {
+    padding-top: 6rem;
+    padding-bottom: 62px;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2px;
   }
   .aboutSection .gridItemText h3 {
@@ -308,7 +371,6 @@
 
   .aboutSection > .gridCard {
     width: 100%;
-    /* height: 600px; */
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -317,7 +379,7 @@
     background: #fff;
     gap: 15px;
   }
-  
+
   .addWllet {
     margin-right: 0px;
   }

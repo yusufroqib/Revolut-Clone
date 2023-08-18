@@ -49,12 +49,6 @@
   text-decoration: underline;
 }
 
-.mobileDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* PERSONAL LIST */
 
 .PersonalList {
@@ -91,6 +85,12 @@
 }
 
 /* NAV BUTTON */
+
+.mobileDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .navBtn {
   display: flex;
