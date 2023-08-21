@@ -1,5 +1,6 @@
 /* FOR DESKTOPS */
 @media (max-width: 1280px) {
+ 
   /* HEADER AND NAV */
   .header {
     padding: 34px 25px;
@@ -154,17 +155,24 @@
     width: 147px;
     height: 47px;
   }
+
+/*FOOTER SECTION*/
+
+  .footerSection {
+    height: 80vh;
+  }
 }
 
-/* LARGE TABLETS/LAPTOP */
+/* LARGE TABLETS/LAPTOP 991px*/
 
 @media (max-width: 991px) {
-
+  /*HERO SECTION*/
   .heroSection {
     height: auto;
     padding-bottom: 194px;
   }
 
+    /*ABOUT SECTION*/
   .aboutSection {
     padding: 0 34px;
     margin: 74px 0;
@@ -183,9 +191,12 @@
     margin-bottom: 45px;
   }
   
+  /*FOOTER SECTION*/
+
 .footerSection {
  font-size: 26px;
  padding: 80px 228px 57px 41px;
+ height: auto;
 }
 
 .footerSection .footerLink {
@@ -194,10 +205,11 @@
 }
 }
 
-/* SMALL TABLETS */
+/************************* SMALL TABLETS   768px***************************/
 
 @media (max-width: 768px) {
 
+/* HEADER SECTION*/
   .logo {
     font-size: 16px;
   }
@@ -212,6 +224,7 @@
   height: 47px;
 }
 
+/* ABOUT SECTION*/
 .aboutSection{
   margin: 54px 0;
 }
@@ -235,9 +248,14 @@
   width: auto;
 }
 
+/*HERO SECTION*/
+
 .heroSection {
   padding-bottom: 44px;
 }
+
+/*FOOTER SECTION*/
+
 .footerSection {
   width: 100%;
   place-items: center;
@@ -249,6 +267,8 @@
 
 /****************** 540px SCREEN ******************** */
 @media (max-width: 540px) {
+
+  /*HEADER SECTION*/
   .navBtn {
     display: none;
   }
@@ -264,6 +284,8 @@
     width: 100%;
   }
 
+  /* FOOTER SECTION*/
+
   .footerSection {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 30px;
@@ -273,14 +295,19 @@
 /********************* 480px SCREEN  Small Phones**************************/
 
 @media (max-width: 480px) {
+
+  /*HEADER SECTION*/
   .header {
     height: 81px;
   }
   
+  /*HERO SECTION*/
   .heroSection {
     background-image: url(/img/mobileBg.svg);
   }
 
+
+  /*ABOUT SECTION*/
   .aboutSection {
     padding: 0;
     margin: 0;
@@ -342,17 +369,22 @@
 }
 
 
-/************* SCREEN FOR 375PX ************************/
+/************* SCREEN FOR iphones and 375PX ************************/
 @media (max-width: 375px) {
+
+  /*HEADER SECTION*/
   .header {
     padding: 14px 12px;
   }
 
+  /*HERO SECTION*/
   .heroBtn .btn {
     font-size: 16px;
     width: 207px;
     height: 37px;
   }
+
+/*ABOUT SECTION*/
 
   .aboutSection .gridCard {
     margin-top: 14px;
@@ -368,6 +400,35 @@
   }
 }
 
+
+/***************************** Galaxy Fold and Small Screen  280px ************************* */
 @media (max-width: 280px) {
 
+  /*ABOUT SECTION*/
+  .aboutSection .gridCard .aboutImg {
+    width: 247px;
+    height: 149px;
+  }
+
+  .aboutSection .gridItem .atmTablet {
+    width: 271px;
+    height: 370px;
+  }
+
+/*FOOTER SECTION*/
+
+  .footerSection {
+    font-size: 16px;
+    padding: 14px 12px;
+    gap: 8px;
+   }
+
+   .footerSection h4 {
+    margin-bottom: 25px;
+   }
+   
+   .footerSection .footerLink {
+     font-size: 16px;
+     width: auto;
+   }
 }
