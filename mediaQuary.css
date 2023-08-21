@@ -273,6 +273,10 @@
 /********************* 480px SCREEN  Small Phones**************************/
 
 @media (max-width: 480px) {
+  .header {
+    height: 81px;
+  }
+  
   .heroSection {
     background-image: url(/img/mobileBg.svg);
   }
@@ -282,11 +286,6 @@
     margin: 0;
   }
 
-  .heroBtn .btn {
-    font-size: 16px;
-    width: 207px;
-    height: 37px;
-  }
 
   .aboutSection .gridCard {
     padding: 0 34px;
@@ -307,10 +306,6 @@
   }
 
   .aboutSection .gridItem button {
-    font-size: 16px;
-    width: 217px;
-    padding: 12px;
-    height: 37px;
     background-color: #9fb7b9;
   }
 
@@ -343,5 +338,36 @@
   position: relative;
   top: -60px;
 }
+
+}
+
+
+/************* SCREEN FOR 375PX ************************/
+@media (max-width: 375px) {
+  .header {
+    padding: 14px 12px;
+  }
+
+  .heroBtn .btn {
+    font-size: 16px;
+    width: 207px;
+    height: 37px;
+  }
+
+  .aboutSection .gridCard {
+    margin-top: 14px;
+    padding: 0 12px 33px;
+  }
+  
+  .aboutSection .gridItem button {
+    font-size: 12px;
+    width: 217px;
+    padding: 12px 30px;
+    height: 47px;
+    background-color: #9fb7b9;
+  }
+}
+
+@media (max-width: 280px) {
 
 }
