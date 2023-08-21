@@ -307,4 +307,8 @@
   .wallet2 {
     display: inline;
   }
+
+  .gridItemCard{
+    order: 2;
+  }
 }
