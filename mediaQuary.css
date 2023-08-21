@@ -11,7 +11,7 @@
     
   }
 
-  .mainNav {
+  .mainNav { 
     display: none;
   }
 
@@ -26,7 +26,7 @@
   }
 
   .mainNav {
-    background-color: rgba(100, 95, 95, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,9 +38,15 @@
     backdrop-filter: blur(10px);
     top: 0;
     left: 0;
-    width: 40%;
+    width: 60%;
     height: 100vh;
     transform: translateX(100%);
+  }
+
+  .mainNavList {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: self-start;
   }
 
   .mainNavList {
@@ -153,13 +159,17 @@
 /* LARGE TABLETS/LAPTOP */
 
 @media (max-width: 991px) {
+
   .heroSection {
-    margin-top: 2rem;
+    height: auto;
+    padding-bottom: 194px;
   }
+
   .aboutSection {
     padding: 0 34px;
     margin: 74px 0;
   }
+
   .aboutSection .gridCard {
     grid-column-gap: 40px;
   }
@@ -202,244 +212,99 @@
   height: 47px;
 }
 
-
-  .mainNaveLink:link,
-  .mainNaveLink:visited {
-    font-size: 3rem;
-  }
-
-  .heroSection {
-    height: 100vh;
-    width: 100%;
-  }
-
-  .heroTitle {
-    font-size: 30px;
-    font-weight: 500;
-  }
-
-  .heroSubTitle,
-  .heroText {
-    font-size: 15px;
-  }
-
-  .navBtn .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .heroBtn {
-    width: 256px;
-    height: 65px;
-    padding: 10px;
-    margin: 0 auto;
-  }
-
-  .aboutSection  .gridCard {
-    padding-top: 6rem;
-    padding-bottom: 62px;
-    width: 100%;
-    grid-column-gap: 2px;
-  }
-  .aboutSection .gridItemText h3 {
-    font-size: 15px;
-    width: 268px;
-  }
-
-  .aboutSection .gridItemText p {
-    font-size: 15px;
-    width: 280px;
-    margin-bottom: 80px;
-  }
-
-  .aboutSection .gridItem button {
-    width: 224px;
-    height: 40px;
-    padding: 10px;
-    font-size: 15px;
-    gap: 10px;
-    margin-right: 60px;
-  }
-
-  .aboutSection .gridItemText .learnBtn {
-    width: 145px;
-    height: 47px;
-    margin-left: 8rem;
-  }
-
-  .footerSection {
-    background-color: #1c1c1c;
-    border: 1px solid black;
-    color: #f6f6f6;
-    font-size: 25px;
-    width: 100vw;
-    margin-top: 100px;
-    font-weight: 400;
-    /* height: 100vh; */
-    background-position: left;
-    background-repeat: no-repeat;
-    display: grid;
-    grid-row-gap: 50px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 20px;
-    padding: 50px 831px 50px 100px;
-  }
-
-  .footerSection .gridItem {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footerSection h4 {
-    font-family: "Roboto", sans-serif;
-    margin-bottom: 30px;
-  }
-
-  .footerSection .footerLink {
-    width: 134px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 17px;
-    font-size: 18px;
-    font-weight: 300;
-    font-family: "inter", sans-serif;
-  }
+.aboutSection{
+  margin: 54px 0;
+}
+.aboutSection .addWallet .gridItemText,
+.aboutSection .learnMore .gridItemText {
+  margin-top: 42px;
 }
 
-/*
-  MOBILE SCREEN of 480
-  */
+.aboutSection .addWallet .gridItemText p,
+.aboutSection .addWallet .gridItemText h3,
+.aboutSection .learnMore .gridItemText p,
+.aboutSection .learnMore .gridItemText h3 {
+  width: 100%;
+}
 
-@media (max-width: 430px) {
-  .logo h2 {
-    font-size: 18px;
-    font-weight: 600;
-    font-family: "Syne", sans-serif;
-    gap: 5px;
-  }
+.aboutSection  .gridCard {
+  grid-template-columns: 1fr;
+  text-align: center;
+  padding: 42px  78px 15px;
+}
 
-  .logo img {
-    width: 20px;
-    height: 20px;
-  }
+.aboutSection .gridItemText h3 {
+  width: auto;
+}
 
-  .icon-mobile-nav {
-    width: 20px;
-    height: 20px;
-  }
+.heroSection {
+  padding-bottom: 44px;
+}
+.footerSection {
+  width: 100%;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 88px;
+}
+}
 
+
+/****************** 540px SCREEN ******************** */
+@media (max-width: 540px) {
   .navBtn {
     display: none;
   }
 
-  .heroSection {
-    background-image: url(img/Group\ 26809\ 1.png);
-    height: 70vh;
-    width: 100vw;
-    background-position: center;
-    background-size: cover;
-    align-items: center;
-    text-align: center;
-    margin-top: 10rem;
-  }
-  .aboutSection > .gridCard {
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-
-  .heroText,
-  .heroSubTitle {
-    font-size: 15px;
-    font-weight: 400;
-  }
-
-  .heroTitle {
-    font-size: 20px;
-    margin-bottom: 2rem;
-    font-weight: 600;
-    font-family: "Syne", sans-serif;
-  }
-
-  .heroBtn .btn {
-    font-size: 15px;
-    width: 173px;
-    font-weight: 600;
-    font-family: "Syne", sans-serif;
-    height: 47px;
-    padding: 10px;
-  }
-
-  .aboutSection > .gridCard {
-    width: 100%;
+  .navBtn1 {
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    background: #fff;
-    gap: 15px;
-  }
-
-  .addWllet {
-    margin-right: 0px;
-  }
-  .aboutSection > .addWallet {
-    padding-top: 0px;
-  }
-  .aboutSection > .learnMoreBtn {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .gridItem .gridItemText h3 {
+    flex-direction: column;
+    gap: 10px;
     font-size: 20px;
-    font-weight: 700;
-    font-family: "Syne", sans-serif;
   }
-
-  .aboutSection .gridItem p {
-    font-size: 15px;
-    font-weight: 400;
-    margin-bottom: 10px;
+  
+  .mainNav {
+    width: 100%;
   }
 
   .footerSection {
-    background-color: #1c1c1c;
-    border: 1px solid black;
-    color: #f6f6f6;
-    font-size: 20px;
-    width: 100vw;
-    margin-top: 51px;
-    font-weight: 400;
-    background-image: url(/img/footer.svg);
-    /* background-size: ; */
-    /* height: 100vh; */
-    background-position: left;
-    background-repeat: no-repeat;
-    display: grid;
-    grid-row-gap: 50px;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    padding: 50px 831px 50px 100px;
+    grid-row-gap: 30px;
+  }
+}
+
+/********************* 480px SCREEN  Small Phones**************************/
+
+@media (max-width: 480px) {
+  .heroSection {
+    background-image: url(/img/mobileBg.svg);
   }
 
-  .footerSection .gridItem {
-    display: flex;
-    flex-direction: column;
+  .aboutSection .gridCard {
+    margin-top: 54px;
+    background-color: #fff;
+    text-align: left;
+    padding: 0 32px 32px;
   }
 
-  .footerSection h4 {
-    font-family: "Roboto", sans-serif;
-    margin-bottom: 30px;
+  .aboutSection .gridItemCard {
+    flex-direction: column-reverse;
+    row-gap: 60px;
+    order: 2;
   }
 
-  .footerSection .footerLink {
-    width: 134px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 17px;
-    font-size: 15px;
-    font-weight: 300;
-    font-family: "inter", sans-serif;
+  .aboutSection .gridItem button {
+    background-color: #9fb7b9;
+  }
+
+  .aboutSection .gridItemText p {
+    margin-bottom: 15px;
+  }
+
+  .wallet1 {
+    display: none;
+  }
+
+  .wallet2 {
+    display: inline;
   }
 }

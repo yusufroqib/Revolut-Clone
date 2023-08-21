@@ -100,6 +100,10 @@
   font-family: "Syne", sans-serif;
 }
 
+.navBtn1 {
+  display: none;
+}
+
 .btn,
 .btnlink,
 .btn:visited {
@@ -268,6 +272,10 @@
   cursor: pointer;
   font-size: 24px;
   font-weight: 600;
+}
+
+.wallet2{
+  display: none;
 }
 
 .aboutSection .gridItemText h3 {
