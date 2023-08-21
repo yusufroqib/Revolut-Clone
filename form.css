@@ -53,6 +53,7 @@ header {
   }
   .formTag {
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
@@ -85,5 +86,13 @@ header {
   /* TABLETS */
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+    .formTag {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 254px
+    }
   }
+
+  /************ SCREEN FOR 375PX TO 280PX ********/
