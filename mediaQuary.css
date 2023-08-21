@@ -87,9 +87,9 @@
     font-weight: 600;
     margin-bottom: 15px;
   }
-  .herobtn .btn {
-    width: 237px;
-    height: 47px;
+  .heroBtn .btn {
+    width: 337px;
+    height: 57px;
     font-size: 20px;
   }
 
@@ -277,11 +277,27 @@
     background-image: url(/img/mobileBg.svg);
   }
 
+  .aboutSection {
+    padding: 0;
+    margin: 0;
+  }
+
+  .heroBtn .btn {
+    font-size: 16px;
+    width: 207px;
+    height: 37px;
+  }
+
+  .aboutSection .gridCard {
+    padding: 0 34px;
+    margin: 195px 0 74px;
+  }
+
   .aboutSection .gridCard {
     margin-top: 54px;
     background-color: #fff;
     text-align: left;
-    padding: 0 32px 32px;
+    padding: 0 32px 63px;
   }
 
   .aboutSection .gridItemCard {
@@ -291,6 +307,10 @@
   }
 
   .aboutSection .gridItem button {
+    font-size: 16px;
+    width: 217px;
+    padding: 12px;
+    height: 37px;
     background-color: #9fb7b9;
   }
 
@@ -323,4 +343,5 @@
   position: relative;
   top: -60px;
 }
+
 }
