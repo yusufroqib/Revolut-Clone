@@ -311,4 +311,18 @@
   .gridItemCard{
     order: 2;
   }
+.aboutSection .gridItem .learnMoreBtn {
+  margin-top: 0;
+  margin-left: 0;
+}
+.aboutSection .learnMore {
+  gap: 0;
+  height: 598px;
+  padding-bottom: 0;
+}
+
+.aboutSection .gridCard2 {
+  position: relative;
+  top: -60px;
+}
 }
