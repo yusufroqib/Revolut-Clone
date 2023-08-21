@@ -220,10 +220,8 @@
   margin-top: 42px;
 }
 
-.aboutSection .addWallet .gridItemText p,
-.aboutSection .addWallet .gridItemText h3,
-.aboutSection .learnMore .gridItemText p,
-.aboutSection .learnMore .gridItemText h3 {
+.aboutSection .gridCard p,
+.aboutSection .gridCard h3 {
   width: 100%;
 }
 
