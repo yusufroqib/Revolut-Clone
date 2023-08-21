@@ -233,6 +233,10 @@
   margin-top: 42px;
 }
 
+.aboutSection .learnMore .gridItemText {
+  place-items: center;
+}
+
 .aboutSection .gridCard p,
 .aboutSection .gridCard h3 {
   width: 100%;
@@ -331,6 +335,11 @@
     row-gap: 60px;
     order: 2;
   }
+
+  .aboutSection .learnMore .gridItemText {
+    place-items: start;
+  }
+  
 
   .aboutSection .gridItem button {
     background-color: #9fb7b9;
